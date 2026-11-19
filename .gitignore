@@ -1,0 +1,29 @@
+# Keil MDK / ARMCC 编译中间产物（源码、工程文件入库，中间产物不入库）
+OBJ/*
+!OBJ/EPD.hex
+
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.sct
+*.htm
+*.axf
+*.map
+*.lst
+*.bak
+*.ddk
+*.edk
+*.iex
+*.tra
+
+# Keil 个人界面配置与调试器设置（含本机用户名、路径）
+*.uvguix.*
+JLinkSettings.ini
+
+# 编辑器 / 操作系统
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

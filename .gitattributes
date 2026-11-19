@@ -1,0 +1,18 @@
+# 工程源码沿用 Keil MDK 的 GB18030 编码 + CRLF 换行（中文注释在 Keil 中才不会乱码）。
+# 仓库内统一存为 UTF-8 / LF；clone 时 Git 自动转回 GB18030 + CRLF，本地开发体验不变。
+*.c   text eol=crlf working-tree-encoding=GB18030
+*.h   text eol=crlf working-tree-encoding=GB18030
+*.s   text eol=crlf working-tree-encoding=GB18030
+*.bat text eol=crlf working-tree-encoding=GB18030
+
+# 这两个「DMA 备选方案」文件本身已是 UTF-8，跳过编码转换
+HARDWARE/VS10XX/vs1003.c -working-tree-encoding
+HARDWARE/VS10XX/vs1003.h -working-tree-encoding
+
+# 正点原子模板自带的中文说明文件是 GBK
+USMART/readme.txt text eol=crlf working-tree-encoding=GB18030
+
+# 文档与工程配置本身是 UTF-8
+*.md      text eol=lf
+*.uvprojx text eol=lf
+*.uvoptx  text eol=lf
